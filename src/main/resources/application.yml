@@ -1,0 +1,22 @@
+server:
+  error:
+    include-message: always
+  port: 10300
+app:
+  version: 1.0.0
+Spring:
+  datasource:
+    password: 150193
+    url: jdbc:postgresql://localhost:5432/employee
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non-contextual-creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+      show sql: true
