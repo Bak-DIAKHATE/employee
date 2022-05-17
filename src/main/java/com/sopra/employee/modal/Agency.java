@@ -10,5 +10,4 @@ import lombok.Setter;
 public class Agency extends Employee{
     private String name;
     private String place;
-
 }

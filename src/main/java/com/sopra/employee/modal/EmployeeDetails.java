@@ -4,11 +4,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Getter
 @Setter
 @NoArgsConstructor
-public class secteurActivity extends Agency {
+public class EmployeeDetails extends Agency {
+
     private String type;
     private String nameDirector;
-    private int nbreSalaries;
+    private int salary;
 }
