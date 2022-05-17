@@ -17,7 +17,7 @@ public class EmployeeServiceImpl{
         this.employeeRepository =employeeRepository;
     }
     public Employee addEmployee(Employee employee) {
-        employee.setEmployeeCode(UUID.randomUUID().toString());
+       // employee.setEmployeeCode(UUID.randomUUID().toString());
         return employeeRepository.save(employee);
     }
     public List<Employee> findAllEmployees(){
